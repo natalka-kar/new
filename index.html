@@ -4,95 +4,96 @@
 <head>
     <meta charset="UTF-8">
     <title>сайт</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <table cellspacing="15">
-        <tr>
-            <td>
-                <img src="RMo2wWcE3q0.jpg" width="200" alt="Sorry">
-            </td>
-            <td>
+    <div class="container">
+        <div class="info">
+            <img src="RMo2wWcE3q0.jpg" alt="Sorry" class="avatar">
+
+            <div class="info-text">
                 <h1>Наталья Каразан</h1>
-                <p><em>Я стараюсь хоть что-нибудь суметь. Не всегда получается, но я <strong>стараюсь</strong></em></p>
+                <p>Я стараюсь хоть что-нибудь суметь. Не всегда получается, но я <strong>стараюсь</strong></p>
                 <p>Я средне готовлю, средне рисую, средне дружу. Я середнячок</p>
-            </td>
-        </tr>
-    </table>
+                <h4>Мои соцсети</h4>
+                <a href="https://vk.com/id186147460" target="_blank">VK</a>
+                |
+                YT
+            </div>
+        </div>
 
-    <hr>
 
-    <h2>Мои соцсети</h2>
-    <ul type="square">
-        <li><a href="https://vk.com/id186147460" target="_blank">VK</a></li>
-        <li>YT</li>
-        <li>TELEGA</li>
-    </ul>
+        <div class="card bg-yellow">
+            <h2>Мои хобби</h2>
+            <ol class="list">
+                <li>cook</li>
+                <li>draw</li>
+                <li>sleep</li>
+            </ol>
+        </div>
 
-    <hr>
+        <div class="card bg-green">
+            <h2>Опыт работы</h2>
+            <table class="table">
 
-    <h2>Мои соцсети</h2>
-    <ol type="I">
-        <li>cook</li>
-        <li>draw</li>
-        <li>sleep</li>
-    </ol>
+                <tr>
+                    <td>Суд</td>
+                    <td>Секретарь</td>
+                    <td>2021</td>
+                </tr>
+                <tr>
+                    <td>Доброном</td>
+                    <td>Секретарь</td>
+                    <td>2021-2022</td>
+                </tr>
+            </table>
+        </div>
 
-    <hr>
+        <div class="card bg-red">
+            <h2>Курсы</h2>
+            <ul class="link-list">
+                <li>
+                    <a href="https://www.youtube.com/watch?v=7tc-irTQaaI" target="_blank">Bird</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=OrO5gYxkxyA" target="_blank">Dino</a>
+                </li>
+            </ul>
+        </div>
 
-    <h2>Опыт работы</h2>
-    <table border="1">
-        <tr>
-            <th>Место</th>
-            <th>Кто</th>
-            <th>Когда</th>
-        </tr>
-        <tr>
-            <td>Суд</td>
-            <td>Секретарь</td>
-            <td>2021</td>
-        </tr>
-        <tr>
-            <td>Доброном</td>
-            <td>Секретарь</td>
-            <td>2021-2022</td>
-        </tr>
-    </table>
+        <div class="contact">
+            <h2>Связь со мной</h2>
 
-    <hr>
+            <form action="/">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>
 
-    <h2>Курсы</h2>
-    <a href="look.html" target="_blank">Смотрите</a>
+                    <div class="form-group">
+                        <label for="email">Почта</label>
+                        <input type="text" id="email" placeholder="Введите почтy">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="text">Вопросек</label>
+                    <textarea id="text" cols="10" rows="3"></textarea>
+                </div>
 
-    <hr>
+                <input class="btn" type="submit" value="Связаться">
 
-    <h2>Связь со мной</h2>
+            </form>
+        </div>
+        <div class="position">
+            <div class="box"></div>
+        </div>
+    </div>
 
-    <form action="/">
-        <label for="name">Имя</label>
-        <input type="text" id="name" placeholder="Введите имя">
 
-        <br>
 
-        <label for="email">Почта</label>
-        <input type="text" id="email" placeholder="Введите почта">
-
-        <br>
-
-        <label for="text">Вопросек</label>
-
-        <br>
-
-        <textarea id="text" cols="10" rows="3"></textarea>
-
-        <br>
-
-        <input type="submit" value="Связаться" onclick="return false;">
-
-    </form>
-
-    <hr>
-
+    <div style="margin-bottom: 500px;"></div>
 </body>
 
 </html>
